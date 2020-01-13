@@ -1,0 +1,31 @@
+.forms {
+  margin: 9.5rem auto;
+  display: flex;
+  justify-content: center;
+
+  .formDiv {
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    padding: 2rem;
+    width: 30rem;
+    form {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      padding: 10px;
+
+      input,label,button{
+        margin: 10px;
+      }
+
+    }
+  }
+
+}
+
+
+
+
+
+
+

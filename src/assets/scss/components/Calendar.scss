@@ -1,0 +1,140 @@
+.calendar-container,
+.calendar,
+.calendar-header,
+td,
+tr {
+  padding: 0;
+  margin: 0;
+}
+
+
+.calendar-container {
+  .day,
+  .empty-slot,
+  .week-day {
+    text-align: center;
+  }
+
+  .calendar {
+    thead {
+      font-size: 1.6rem;
+
+      tr {
+        td {
+          padding-left: .3em;
+        }
+      }
+
+      .nav-month {
+        position: absolute;
+        top: 0.6rem;
+        font-size: 0.6rem;
+        right: .23rem;
+      }
+
+      .editor-year {
+        max-width: 3.6rem;
+      }
+
+      .label-month,
+      .label-year {
+        font-size: 18px;
+        display: inline-block;
+        margin-right: .6rem;
+      }
+
+      .label-month {
+        cursor: pointer;
+        position: relative;
+        color: #f47442;
+
+        .month-popup {
+          position: absolute;
+          z-index: 10;
+          padding: 5px;
+          left: 0;
+          background: white;
+          border: 2px solid skyblue;
+          max-height: 25rem;
+        }
+      }
+
+      .label-year {
+        color: #6842f4;
+      }
+    }
+
+    tbody {
+      tr {
+        .leaveday {
+          background-color: rgba(250, 0, 0, .5);
+        }
+
+        td {
+          position: relative;
+
+          &:hover .showOnHover {
+            position: absolute;
+            width: 12.5rem;
+            z-index: 100;
+            display: block;
+            right: 0;
+            top: 55%;
+          }
+
+          .showOnHover {
+            display: none;
+          }
+        }
+      }
+    }
+
+
+    tr:not(:first-child) td {
+      height: 5rem !important;
+    }
+
+    width: 100%;
+    padding: 1.25rem;
+
+    .day {
+      position: relative;
+
+      width: 15%;
+      height: 10vh;
+      line-height: 1.5rem;
+
+    }
+
+    .current-day {
+      background-color: #4285f4;
+      color: white;
+    }
+
+    .late {
+      color: yellow;
+    }
+
+    .ontime {
+      color: lawngreen;
+    }
+
+    .absent {
+      color: red;
+    }
+
+    .weekOffDay {
+      color: #f4781b;
+     }
+
+    .holiday {
+      color: brown;
+    }
+
+    .selected-day {
+      background-color: yellow;
+      line-height: 1.8rem;
+      color: black;
+    }
+  }
+}

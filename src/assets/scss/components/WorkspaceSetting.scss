@@ -1,0 +1,15 @@
+.WorkspaceSetting {
+  //border: 1px solid;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .weekOffDays {
+    padding: 5px 10px;
+    margin: 5px;
+
+    .badge {
+      cursor: pointer;
+    }
+  }
+}
